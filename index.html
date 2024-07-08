@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/cea7953187.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="https://logos.textgiraffe.com/logos/logo-name/Vishnu-designstyle-boots-m.png" alt="image" class="logo ">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Service">Services</a></li>
+                    <li><a href="#Service">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div>
+                <div class="text-content">
+                    <p>MERN STACK DEVELOPER</p>
+                    <H1>Myself <span>Vishnu JM</span><br> From INDIA</H1>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------about section--------------------------------- -->
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="pic/About pic.jpg" alt="img">
+                </div>
+                <div class="about-col2">
+                    <h1 class="subtitle">About</h1>
+
+                    <p>As a MERN stack developer, I bring a strong foundation in JavaScript, React, Node.js, Express, and MongoDB. While I may be new to the field, my dedication, adaptability, and willingness to learn make me an asset to any team.
+                    </p>
+
+                    <p>I am eager to contribute my technical skills and passion for coding to projects, while also actively seeking opportunities for growth and improvement. With a positive attitude and a commitment to continuous learning, I am ready to embark on a successful career in MERN stack development.
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-link active-link" onclick="opentab('Skill')">Skill</p>
+                        <p class="tab-link" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-link" onclick="opentab('Education')">Education</p>
+                        
+                    </div>
+                    <div class="tab-content active-tab" id="Skill">
+                        <ul>
+                            <li> <span>MERN STACK </span><br>web development</li>
+                            <li><span>HTML,CSS,BOOT STRAP</span> <br>user interface</li>
+                            <li><span>JAVA SCRIPT </span><br>scripting language</li>
+                            <li><span>REACT-JS </span><br>web app development</li>
+                        </ul>     
+                    </div>
+                    <div class="tab-content" id="Experience">
+                        <ul>
+                            <li><span>2024-current</span><br>MERN-STACK web development at Entri Elevate institute</li>
+                            <li><span>Aspiring MERN-STACK development</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Education">
+                        <ul>
+                            <li><span>MERN-STACK development 2024</span><br>Entri Elevate institute</li>
+                            <li><span>B-TECH 2018</span><br>KMCT College of engineering</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+     </div>
+     <!-- -------------------------service----------------------------------------- -->
+      <div id="Service"> 
+        <div class="container">
+            <h1 class="subtitle">Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h1>Web designing</h1>
+                    <p>Web design involves creating the visual elements and layout of a website, while coding involves translating these designs into a functional website using programming languages like HTML, CSS, and JavaScript</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h1>Front end</h1>
+                    <p>Front-end web development is the development
+                         of the graphical user interface of a website 
+                         through the use of HTML, CSS, and JavaScript so users can view and interact with that website</p>
+                         <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h1>Back end</h1>
+                    <p>Back-end development means working on server-side software, which focuses on everything you can't see on a website. Back-end developers ensure the website performs correctly, focusing on databases, back-end logic, 
+                        application programming interface (APIs), architecture,and servers</p>
+                        <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+
+      </div>
+      <!-- ------------------------contact me---------------------------------------------- -->
+       <div id="contact" style="padding-top: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <div class="subtitle">
+                        contact
+
+                    </div>
+                    <p><i class="fa-solid fa-envelope"></i>vishnublsy5@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9645207451</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="/pic/CV temporary.pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form >
+                        <input type="text" name="Name" placeholder="your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © vishnu <i class="fa-regular fa-heart"></i></p>
+        </div>
+       </div>
+     <!-- --------------------java script ------------------------------- -->
+     <script>
+        var tablinks=document.getElementsByClassName('tab-link')
+        var tabcontents=document.getElementsByClassName('tab-content')
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove('active-link')
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove('active-tab')
+            }
+            event.currentTarget.classList.add('active-link')
+            document.getElementById(tabname).classList.add('active-tab')
+        }
+     </script>
+     <script>
+        var side=document.getElementById("sidemenu")
+        function openmenu(){
+            side.style.right="0"
+        }
+        function closemenu(){
+            side.style.right="-150px"
+        }
+     </script>
+</body>
+</html>
